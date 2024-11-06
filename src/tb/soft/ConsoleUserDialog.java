@@ -21,7 +21,7 @@ import java.util.Scanner;
 public class ConsoleUserDialog {
 	
 	   private final String  ERROR_MESSAGE =
-		          "Nieprawidłowe dane!\nSpróbuj jeszcze raz.";
+		          "Invalid data!\nTry again.";
 	   
 	   private final Scanner sc = new Scanner(System.in);
 
@@ -33,13 +33,13 @@ public class ConsoleUserDialog {
 		
 		public void printInfoMessage(String message) {
 			System.out.println(message);
-			enterString("Nacisnij ENTER");
+			enterString("Press ENTER");
 		}
 		
 		
 		public void printErrorMessage(String message) {
 			System.err.println(message);
-			System.err.println("Nacisnij ENTER");
+			System.err.println("Press ENTER");
 			enterString("");
 		}
 		
